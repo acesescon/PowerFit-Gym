@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="img/mainLogo.png">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PowerFit Gym</title>
+    </head>
+    <body>
+        <nav id="navbar"></nav>
+        
+        <section id="landingBooking" class="landing">
+            <h1>Book a Training Session</h1>
+            <h3>Schedule your personalized training session with our expert coaches today!</h3>
+        </section>
+
+        <section id="bookSection">
+            <div class="container">
+
+                <div class="bookInfo">
+                    <h2>Booking <br>Information</h2>
+                    <div class="infoItem">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div>
+                            <h3>Hours of Operation</h3>
+                            <p>Monday - Friday: 6am - 10pm</p>
+                            <p>Saturday - Friday: 7am - 8pm</p>
+                            <p>Sunday - Friday: 8am - 6pm</p>
+                        </div>
+                    </div>
+                    <div class="infoItem">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h3>Session Duration</h3>
+                            <p>Personal Training: 60mins</p>
+                            <p>Group Training: 45mins</p>
+                            <p>Equipment Orientation: 30mins</p>
+                            <p>Free Consultation: 30mins</p>
+                        </div>
+                    </div>
+                    <div class="infoItem">
+                        <i class="fa-solid fa-handcuffs"></i>
+                        <div>
+                            <h3>Cancellation Policy</h3>
+                            <p>Please cancel or 
+                            reschedule at least 24 
+                            hours in advance to avoid 
+                            cancellation fees.</p>
+                        </div>
+                    </div>
+
+                    <span></span>
+
+                    <div class="infoItem2">
+                            <h3>Need Help?</h3>
+                            <p>Contact us directly if you 
+                            have any questions or special 
+                            requirements.</p>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>(123) 456-7890</p>
+                            </div>
+                    </div>
+                </div>
+
+                <form id="bookForm">
+                    <h2>Book Your Session</h2>
+                    <h3>Personal Information</h3>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+                        </div>
+                        <div>
+                            <label for="contact">Phone Number *</label>
+                            <input type="text" id="contact" name="contact" maxlength="11" pattern="\d{11}"  placeholder="(09) 123-4567-890" required>
+                        </div>
+                    </div>
+                    <h3>Service Selection</h3>
+                    <select>
+                        <option value="" disabled selected>Select a Service *</option>
+                        <option value="personalTraining">Personal Training - $50</option>
+                        <option value="groupTraining">Group Training - $30</option>
+                        <option value="equipmentOrientation">Equipment Orientation - $20</option>
+                        <option value="freeConsultation">Free Consultation - $0</option>
+                    </select>
+                    <h3>Preferred Date & Time</h3>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="date">Select Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div>
+                            <label for="time">Select Time *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <label for="additionalRequests">Additional Requests</label>
+                    <textarea id="additionalRequests" name="additionalRequests" rows="5" placeholder="Enter any special requests or information here..."></textarea>
+                    <button type="submit" class="btn">Book Now</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="questionsBooking">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faqContainer">
+                <div class="faqItem">
+                    <h3>What should I bring to my first session?</h3>
+                    <p>For your first session, please bring comfortable workout clothes, athletic shoes, a water bottle, 
+                    and a small towel. If you have any medical conditions, please bring relevant information or 
+                    documentation.</p>
+                </div>
+                <div class="faqItem">
+                    <h3>How early should I arrive?</h3>
+                    <p>You can reschedule your session by contacting us directly via phone or email.</p>
+                </div>
+                <div class="faqItem">
+                    <h3>How do I reschedule my session?</h3>
+                    <p>We recommend arriving 10-15 minutes before your scheduled session. This allows time for 
+                    changing, completing any necessary paperwork, and a brief orientation if it's your first visit.</p>
+                </div>
+                <div class="faqItem">
+                    <h3>What is your cancellation policy?</h3>
+                    <p>We require 24 hours notice for cancellations or rescheduling. Late cancellations or no-shows may 
+                    be subject to a cancellation fee equal to 50% of the session cost.</p>
+                </div>
+                <div class="faqItem">
+                    <h3>How do I reschedule my session?</h3>
+                    <p>You can reschedule your session by contacting us directly via phone or email.</p>
+                </div>
+            </div> 
+        </section>
+
+        <footer id="footer"></footer>
+    </body>
+
+    <script src="script.js"></script>
+</html>

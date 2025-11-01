@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 1rem 10rem;
+    position: relative;
+    align-items: center;
+    background-color: #111827;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.branding h2{
+    margin-bottom: 0rem;
+}
+
+nav div{
+    display: flex;
+}
+
+nav .navigation{
+    position: absolute;
+    right: 10rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: .5rem 0rem;
+}
+
+.navigation a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+#book{
+    background-color: #DC2626;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+}
+
+@media (max-width: 1172px) {
+    nav{
+        padding: 1rem 7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    nav{
+        padding: 1rem 1rem;
+    }
+
+    nav .navigation {
+        gap: 1rem;
+        right: 1rem;
+    }
+
+    .branding h2 {
+        font-size: 1rem;
+    }
+
+    #book {
+        padding: .5rem .7rem;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    nav .navigation {
+        gap: .4rem;
+    }
+
+    .navigation a {
+        font-size: .8rem;
+    }
+
+    #book {
+        padding: .3rem .5rem;
+        font-size: .7rem;
+    }
+}
